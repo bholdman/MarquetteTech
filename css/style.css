@@ -59,6 +59,104 @@ body {
 
 .sidebar {
   top: 120px;
+  overflow-y: hidden !important;
+  padding:0px !important;
+}
+
+.sidebar-about {
+  height: 33.33%;
+  width: 100%;
+  left:0px;
+  border-bottom: 1px solid #d3d3d3;
+  position: absolute;
+  top:0;
+  transition: all 0.75s ease;
+  background-color: #f5f5f5;
+  z-index: 100;
+}
+
+.sidebar-about.slideUp{
+  top: -33.33%;
+}
+
+.sidebar-spaces {
+  height: 33.33%;
+  width: 100%;
+  left:0px;
+  border-bottom: 1px solid #d3d3d3;
+  position: absolute;
+  top:33.33%;
+  transition: all 0.75s ease;
+  background-color: #f5f5f5;
+  z-index: 100;
+}
+
+.sidebar-spaces.slideUp{
+  top: -33.33%;
+}
+
+.sidebar-spaces.slideDown{
+  top: 100%;
+}
+
+.sidebar-initiatives {
+  height: 33.33%;
+  width: 100%;
+  left:0px;
+  position: absolute;
+  top:66.66%;
+  transition: all 0.75s ease;
+  background-color: #f5f5f5;
+  z-index: 100;
+}
+
+.sidebar-initiatives.slideDown{
+  top: 133.33%;
+}
+
+.sidebar-about-sub{
+  display: none;
+  background-color: red;
+  height:100%;
+  position:absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-spaces-sub{
+  display: none;
+  background-color: green;
+  height:100%;
+  position:absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sidebar-initiatives-sub{
+  display: none;
+  background-color: blue;
+  height:100%;
+  position:absolute;
+  z-index: 10;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.collapse-it{
+  background-color: #333;
+  height:8%;
+  display: none;
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  left: 0px;
+  color:#fff;
+  z-index:100;
 }
 
 
