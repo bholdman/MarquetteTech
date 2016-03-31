@@ -148,6 +148,22 @@ h2 {
   top: 120px;
   overflow-y: hidden !important;
   padding:0px !important;
+  cursor: pointer;
+}
+
+.menu-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-subtext {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.sidebar-about{
+  padding-top: 130px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
