@@ -1,13 +1,19 @@
-/* GOOGLE FONTS */
+/*----------
+GOOGLE FONTS
+----------*/
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,600,600italic,700,700italic,800,800italic);
 
-/* GENERAL & BASE STRUCTURE */
+
+/*-----------------------------
+GENERAL STYLES & BASE STRUCTURE
+-----------------------------*/
 
 body {
   padding-top: 150px; /* Move down content because we have a fixed navbar that is 150px tall */
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 24px;
   color: #666;
 }
 
@@ -15,8 +21,9 @@ h1 {
   color: #231f20;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 54px;
+  font-size: 36px;
   margin-bottom: 50px;
+  line-height: 62px;
 }
 
 h1 span {
@@ -31,6 +38,13 @@ h2 {
   margin-bottom: 20px;
 }
 
+h3 {
+  color: #231f20;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
 .main p {
   margin-bottom: 40px;
 }
@@ -42,7 +56,35 @@ h2 {
   margin-bottom: 40px;
 }
 
-/* WEIRDLY STYLED LINKS AT THE BOTTOM OF THE PAGE */
+.main .img-responsive {
+  margin-bottom: 20px;
+}
+
+.main .well .img-responsive {
+  margin-bottom: 0;
+}
+
+.thumbnail .img-responsive {
+  margin-bottom: 0;
+}
+
+.media-left {
+  margin-right: 25px;
+}
+
+.media-left img {
+  max-width: 250px;
+  height: auto;
+  background-color: #F5F5F5;
+  padding: 15px;
+  border: 2px solid #EEE;
+  border-radius: 4px;
+}
+
+
+/*--------------------------------------------
+WEIRDLY STYLED LINKS AT THE BOTTOM OF THE PAGE
+--------------------------------------------*/
 
 .linklist {
   margin-top: 50px;
@@ -66,7 +108,14 @@ h2 {
 	transition: all ease 0.5s;
 }
 
-/* NAVBAR */
+
+/*-----
+ NAVBAR
+ --- */
+
+.navbar-fixed-top {
+  border: 0;
+}
 
 .navbar {
   height: 150px;
@@ -74,7 +123,7 @@ h2 {
 }
 
 #navbar {
-  margin-top: 35px;
+  margin-top: 48px;
 }
 
 .navbar a {
@@ -140,6 +189,7 @@ h2 {
   width: 180px;
   height: auto;
 }
+
 
 
 /* SIDEBAR (NOT the same as navbar. Get it straight!) */
@@ -283,6 +333,11 @@ h2 {
 
 /* ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID */
 
+/*-----------------------------------------------
+ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
+-----------------------------------------------*/
+
+
 #green h1 span {
   border-bottom: 6px solid #72BE49;
 }
@@ -303,6 +358,22 @@ h2 {
   -webkit-transition: all ease 0.5s;
 	-moz-transition: all ease 0.5s;
 	transition: all ease 0.5s;
+}
+
+#green .nav-active span {
+  padding-bottom: 10px;
+  border-bottom: 6px solid #72BE49;
+}
+
+#green .btn-marquette:focus, #green .btn-marquette:hover {
+  background-color: #72BE49;
+  -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+#green .carousel-control:focus i, .carousel-control:hover i {
+  color: #72BE49;
 }
 
 #yellow h1 span {
@@ -327,6 +398,22 @@ h2 {
 	transition: all ease 0.5s;
 }
 
+#yellow .nav-active span {
+  padding-bottom: 10px;
+  border-bottom: 6px solid #FFC200;
+}
+
+#yellow .btn-marquette:focus, #yellow .btn-marquette:hover {
+  background-color: #FFC200;
+  -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+#yellow .carousel-control:focus i, .carousel-control:hover i {
+  color: #FFC200;
+}
+
 #red h1 span {
   border-bottom: 6px solid #EC5D57;
 }
@@ -349,6 +436,55 @@ h2 {
 	transition: all ease 0.5s;
 }
 
+#red .nav-active span {
+  padding-bottom: 10px;
+  border-bottom: 6px solid #EC5D57;
+}
+
+#red .btn-marquette:focus, #red .btn-marquette:hover {
+  background-color: #EC5D57;
+  -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+#red .carousel-control:focus i, .carousel-control:hover i {
+  color: #EC5D57;
+}
+
+
+/*----
+MODALS
+----*/
+
+.sidebar-right .thumbnail {
+  cursor: pointer;
+}
+
+.close {
+  font-size: 32px;
+}
+
+.modal-header {
+  padding: 15px 20px;
+}
+
+.modal-body p {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.btn-marquette {
+  background-color: #231F20;
+  color: #EEE;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn-marquette:focus, .btn-marquette:hover {
+  color: #EEE;
+}
+
 /*
  * Global add-ons
  */
@@ -358,18 +494,49 @@ h2 {
   border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
+
+/*-------
+CAROUSELS
+-------*/
+
+.carousel-control {
+  opacity: 1;
+  width: 5%;
 }
 
-/* SIDEBAR */
+.carousel-control:focus, .carousel-control:hover {
+  opacity: 1;
+}
+
+.carousel-control i {
+  position: absolute;
+  top: 42%;
+  z-index: 5;
+  display: inline-block;
+  color: #231F20;
+  font-size: 48px;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left i {
+  left: 0;
+}
+
+.carousel-control.right i {
+  right: 0;
+}
+
+
+/*------------------------------------------------
+SIDEBAR (NOT the same as navbar. Get it straight!)
+------------------------------------------------*/
 
 .sidebar {
   display: none; /* Hide for mobile, show later */
+  top: 120px;
 }
 
 @media (min-width: 768px) {
@@ -443,12 +610,25 @@ h2 {
   border-radius: 50%;
 }
 
-/* FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES ARE ON THEIR WAY */
+
+/*--------------------------------------------------------------------------------------------------
+FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
+--------------------------------------------------------------------------------------------------*/
 
 @media (min-width: 768px) {
 
   body {
     padding-top: 120px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h1 {
+    font-size: 54px;
+  }
+
+  #navbar {
+    margin-top: 35px;
   }
 
   .navbar {
@@ -464,12 +644,24 @@ h2 {
     margin-right: 40px;
   }
 
+  .carousel-control i {
+    top: 40%;
+  }
+
+  .carousel-control.left i {
+    left: -20px;
+  }
+
+  .carousel-control.right i {
+    right: -20px;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 
   .logo {
-    width: 150px;
+    width: 130px;
     height: auto;
   }
 
@@ -492,13 +684,32 @@ h2 {
 
   .navbar-right > li > a {
     font-size: 18px;
-    padding-right: 10px;
-    padding-top: 10px;
+    padding-right: 5px;
+    padding-top: 15px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .sidebar-right {
+    border-left: 1px solid #BBB;
+    height: 100%;
+    margin-top: 25px;
+    padding-left:25px;
   }
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+  .nav > li > a {
+    padding-right: 20px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
 
   .navbar-brand {
     padding: 0 25px;
@@ -506,6 +717,12 @@ h2 {
 
   .navbar-right {
     margin-right: 25px;
+    padding-top: 5px;
+  }
+
+  .navbar-right > li > a {
+    font-size: 20px;
+    padding-right: 15px;
   }
 
 }
