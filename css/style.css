@@ -199,6 +199,7 @@ WEIRDLY STYLED LINKS AT THE BOTTOM OF THE PAGE
   overflow-y: hidden !important;
   padding:0px !important;
   cursor: pointer;
+  min-width:315px;
 }
 
 .menu-text {
@@ -213,7 +214,7 @@ WEIRDLY STYLED LINKS AT THE BOTTOM OF THE PAGE
 }
 
 .sidebar-about{
-  padding-top: 130px;
+  padding-top: 30px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
@@ -539,6 +540,15 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
   top: 120px;
 }
 
+.the-things{
+  width:100%;
+}
+
+.center-all-the-things{
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: 768px) {
   .sidebar {
     position: fixed;
@@ -579,10 +589,12 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
 
 .main {
   padding: 20px;
+  margin-left: 315px;
+  padding-right: 200px;
 }
 @media (min-width: 768px) {
   .main {
-    padding-right: 40px;
+    padding-right: 200px;
     padding-left: 60px;
   }
 }
