@@ -52,8 +52,12 @@ h3 {
 .main ul {
   list-style: none;
   padding-left: 0;
-  line-height: 36px;
+  line-height: 22px;
   margin-bottom: 40px;
+}
+
+.main ul li {
+  padding-bottom: 10px;
 }
 
 .main .img-responsive {
@@ -86,17 +90,18 @@ h3 {
 WEIRDLY STYLED LINKS AT THE BOTTOM OF THE PAGE
 --------------------------------------------*/
 
-.linklist {
+ul.linklist {
   margin-top: 50px;
 }
 
 .linklist li {
   display: block;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 50px;
+  margin-bottom: 60px;
 }
 
 .linklist li a {
@@ -233,6 +238,10 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
   color: #72BE49;
 }
 
+#green .icon:hover, #green .icon:focus {
+  background-color: #72BE49;
+}
+
 #yellow h1 span {
   border-bottom: 6px solid #FFC200;
 }
@@ -271,6 +280,10 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
   color: #FFC200;
 }
 
+#yellow .icon:hover, #green .icon:focus {
+  background-color: #FFC200;
+}
+
 #red h1 span {
   border-bottom: 6px solid #EC5D57;
 }
@@ -307,6 +320,10 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
 
 #red .carousel-control:focus i, .carousel-control:hover i {
   color: #EC5D57;
+}
+
+#red .icon:hover, #green .icon:focus {
+  background-color: #EC5D57;
 }
 
 
@@ -467,6 +484,37 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
   border-radius: 50%;
 }
 
+/*-----------
+SIDEBAR ICONS
+-----------*/
+
+.icon {
+  background-color: #999;
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.icon-border {
+  border: 1px solid #DDD;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 46px;
+  height: 46px;
+  border-radius: 23px;
+}
+
+.icon img {
+  width: 46px;
+  height: auto;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
 
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
@@ -482,6 +530,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   h1 {
     font-size: 54px;
+    line-height: 84px;
   }
 
   #navbar {
@@ -498,6 +547,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .linklist li {
     display: inline-block;
+    font-size: 20px;
     margin-right: 40px;
   }
 
