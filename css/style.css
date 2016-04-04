@@ -228,6 +228,18 @@ ul.linklist {
   padding-top: 30px;
 }
 
+.big-text{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  top: 30%;
+  color: #fff;
+  font-size: 50px;
+  margin-left: 245px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
   height: 36%;
   width: 100%;
@@ -862,6 +874,11 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-top: 15px;
   }
 
+  .big-text{
+    font-size: 35px;
+    line-height: 35px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -902,6 +919,11 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-right: 18%;
   }
 
+  .big-text{
+    font-size: 35px;
+    line-height: 35px;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -912,6 +934,11 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .main {
     padding-right: 12%;
+  }
+
+  .big-text{
+    font-size: 50px;
+    line-height: 50px;
   }
 
 }
