@@ -612,7 +612,7 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
 }
 @media (min-width: 768px) {
   .main {
-    padding-right: 200px;
+    padding-right: 18%;
     padding-left: 60px;
   }
 }
@@ -675,6 +675,16 @@ SIDEBAR ICONS
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .main{
+    margin-left:0px;
+    padding-right:20px;
+  }
+
+  .col-md-3.sidebar-right {
+    padding-right: 35px;
+  }
+}
 
 @media (min-width: 768px) {
 
@@ -720,9 +730,17 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     right: -20px;
   }
 
+  .sidebar-right {
+    max-width:400px;
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+  .main {
+    padding-right: 20px;
+  }
 
   h1 {
     font-size: 36px;
@@ -792,6 +810,9 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     font-size: 20px;
     padding-right: 15px;
   }
+  .main {
+    padding-right: 18%;
+  }
 
 }
 
@@ -799,6 +820,10 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .navbar-right {
     margin-right: 50px;
+  }
+
+  .main {
+    padding-right: 12%;
   }
 
 }
