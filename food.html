@@ -114,7 +114,7 @@
         <a href="codefi.html"><div class="sidebar-codefi center-all-the-things">
           <div class="text-center the-things">
           <!-- icons go here for codefi -->
-          <div class="icon" style="margin-left:133px;">
+          <div class="icon first" style="margin-left:133px;">
            <div class="icon-border">
              <img src="img/icons/codefi.png" alt="impact" />
            </div>
@@ -181,6 +181,10 @@
     $('.navbar-toggle').click(function() {
        $('body').toggleClass('body-fix')
     });
+    if($( ".first" ).offset().top < 220){
+      $( ".logo" ).toggleClass( "hidden" );
+      $( ".logo-mobile" ).toggleClass( "visible-xs" )
+    };
   });
 </script>
 

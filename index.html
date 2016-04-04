@@ -113,7 +113,7 @@
         <div class="text-center the-things">
           <!-- icons go here for About -->
           <div class="the-icons" style="padding-left:80px;">
-            <div class="icon">
+            <div class="icon first">
              <div class="icon-border">
                <img src="img/icons/impact.png" alt="impact" />
              </div>
@@ -325,6 +325,10 @@
     $('.navbar-toggle').click(function() {
        $('body').toggleClass('body-fix')
     });
+    if($( ".first" ).offset().top < 220){
+      $( ".logo" ).toggleClass( "hidden" );
+      $( ".logo-mobile" ).toggleClass( "visible-xs" )
+    };
   });
 </script>
 
