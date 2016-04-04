@@ -693,6 +693,105 @@ SIDEBAR ICONS
   left: -1px;
 }
 
+
+/*-------------------------------------
+TOP MENU (MOBILE EQUIVALENT OF SIDEBAR)
+-------------------------------------*/
+/*
+.top-menu {
+  background-color: #DDD;
+}
+
+.top-menu ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.top-menu ul li {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  border-right: 1px solid #BBB;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.top-menu ul li:last-child {
+  border: none;
+}
+
+.top-menu a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  color: #231F20;
+  display: block;
+  line-height: 18px;
+}
+
+.top-menu a:hover, .top-menu a:focus {
+  text-decoration: none;
+
+}
+
+.top-menu a:hover .top-menu-green, .top-menu a:focus .top-menu-green {
+  background-color: #72BE49;
+}
+
+.top-menu a:hover .top-menu-yellow, .top-menu a:focus .top-menu-yellow {
+  background-color: #FFC200;
+}
+
+.top-menu a:hover .top-menu-red, .top-menu a:focus .top-menu-red {
+  background-color: #EC5D57;
+}
+
+.top-menu-icon {
+  background-color: #999;
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.top-menu-icon-border {
+  border: 1px solid #DDD;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 38px;
+  height: 38px;
+  border-radius: 23px;
+}
+
+.top-menu-icon img {
+  width: 36px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#green .top-menu-active {
+  background-color: #72BE49;
+}
+
+#yellow .top-menu-active {
+  background-color: #FFC200;
+}
+
+#red .top-menu-active {
+  background-color: #EC5D57;
+}
+*/
+>>>>>>> design
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
