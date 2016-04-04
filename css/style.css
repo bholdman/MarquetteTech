@@ -17,6 +17,10 @@ body {
   color: #666;
 }
 
+.body-fix {
+  position: fixed;
+}
+
 h1 {
   color: #231f20;
   text-transform: uppercase;
