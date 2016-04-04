@@ -212,6 +212,7 @@ ul.linklist {
   font-size: 25px;
   font-weight: bold;
   color: #000;
+  clear:both;
 }
 
 .menu-subtext {
@@ -383,7 +384,7 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
   color: #72BE49;
 }
 
-#green .icon:hover, #green .icon:focus {
+#green .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #72BE49;
 }
 
@@ -425,7 +426,7 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
   color: #FFC200;
 }
 
-#yellow .icon:hover, #green .icon:focus {
+#yellow .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #FFC200;
 }
 
@@ -467,7 +468,7 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
   color: #EC5D57;
 }
 
-#red .icon:hover, #green .icon:focus {
+#red .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #EC5D57;
 }
 
@@ -644,13 +645,17 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
 SIDEBAR ICONS
 -----------*/
 
+
 .icon {
   background-color: #999;
-  display: block;
+  display: inline;
   position: relative;
   width: 50px;
   height: 50px;
   border-radius: 25px;
+  float:left;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .icon-border {
