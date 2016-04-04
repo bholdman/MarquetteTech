@@ -125,6 +125,7 @@ ul.linklist {
 .navbar {
   height: 150px;
   background-color: #231f20;
+  text-align: right;
 }
 
 #navbar {
@@ -539,6 +540,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .navbar {
     height: 120px;
+    text-align: left;
   }
 
   .navbar-brand {
@@ -566,6 +568,10 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+  h1 {
+    font-size: 36px;
+  }
 
   .logo {
     width: 130px;
