@@ -223,5 +223,14 @@
       });
     </script>
 
-  </body>
+  <!-- Fix Body when Mobile Dropdown Menu is Deployed -->
+<script>
+  $( document ).ready(function() {
+    $('.navbar-toggle').click(function() {
+       $('body').toggleClass('body-fix')
+    });
+  });
+</script>
+
+</body>
 </html>
