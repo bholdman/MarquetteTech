@@ -801,6 +801,70 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-right:20px;
   }
 
+  .navbar-nav {		    margin-left:0px;
+    text-align: right;		    padding-right:20px;
+  }
+  .nav > li {
+    margin: 0 15px;
+    border-bottom: 1px solid #666;
+  }
+  .nav > li > a, .nav > li:last-child > a {
+    padding-right: 20px;
+  }
+  .navbar-inverse .navbar-collapse {
+    border-color: #DDD;
+  }
+  .nav li ul {
+    list-style: none;
+  }
+  .nav li ul li a {
+    letter-spacing: 1px;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 22px;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+  }
+  .nav li ul li a img {
+    width: 20px;
+    height: auto;
+    margin-top: -5px;
+  }
+  .nav-green:hover, .nav-green:focus {
+    text-decoration: none;
+    color: #72BE49;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+  .nav-yellow:hover, .nav-yellow:focus {
+    text-decoration: none;
+    color: #FFC200;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+  .nav-red:hover, .nav-red:focus {
+    text-decoration: none;
+    color: #EC5D57;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+  #green .nav-active span, #yellow .nav-active span, #red .nav-active span {
+    border: none;
+  }
+  .navbar-right li {
+    display: inline-block;
+    border: none;
+  }
+
+  .navbar-right li a {		  .col-md-3.sidebar-right {
+    padding-right: 10px;
+  }
+
   .col-md-3.sidebar-right {
     padding-right: 35px;
   }
