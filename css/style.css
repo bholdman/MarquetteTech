@@ -122,6 +122,10 @@ ul.linklist {
  NAVBAR
  --- */
 
+ .navbar-nav {
+   margin-left: 170px;
+ }
+
 .navbar-fixed-top {
   border: 0;
 }
@@ -196,7 +200,7 @@ ul.linklist {
 }
 
 .logo {
-  width: 180px;
+  width: 150px;
   height: auto;
 }
 
@@ -210,6 +214,10 @@ ul.linklist {
   padding:0px !important;
   cursor: pointer;
   min-width:315px;
+}
+
+.first{
+  margin-top: 50px;
 }
 
 .menu-text {
