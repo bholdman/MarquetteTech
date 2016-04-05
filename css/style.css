@@ -201,7 +201,6 @@ ul.linklist {
 }
 
 
-
 /* SIDEBAR (NOT the same as navbar. Get it straight!) */
 
 .sidebar {
@@ -355,6 +354,7 @@ ul.linklist {
   color:#fff;
   margin-top:5px;
 }
+
 
 /*-----------------------------------------------
 ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
@@ -673,10 +673,10 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
   border-radius: 50%;
 }
 
+
 /*-----------
 SIDEBAR ICONS
 -----------*/
-
 
 .icon {
   background-color: #999;
@@ -819,6 +819,7 @@ TOP MENU (MOBILE EQUIVALENT OF SIDEBAR)
   background-color: #EC5D57;
 }
 
+
 /*------------
 HOMEPAGE VIDEO
 ------------*/
@@ -837,11 +838,12 @@ HOMEPAGE VIDEO
 }
 
 
-
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
+
 @media (max-width: 767px) {
+
   .main{
     margin-left:0px;
     padding-right:20px;
@@ -850,9 +852,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   .col-md-3.sidebar-right {
     padding-right: 35px;
   }
-}
-
-@media (max-width: 767px) {
 
   .navbar-nav {
     text-align: right;
@@ -934,6 +933,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
 }
+
 
 @media (min-width: 768px) {
 
@@ -1027,11 +1027,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-top: 15px;
   }
 
-  .big-text{
-    font-size: 35px;
-    line-height: 35px;
-  }
-
 }
 
 @media (min-width: 992px) {
@@ -1072,11 +1067,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-right: 18%;
   }
 
-  .big-text{
-    font-size: 35px;
-    line-height: 35px;
-  }
-
 }
 
 @media (min-width: 1200px) {
@@ -1087,11 +1077,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .main {
     padding-right: 12%;
-  }
-
-  .big-text{
-    font-size: 50px;
-    line-height: 50px;
   }
 
 }
