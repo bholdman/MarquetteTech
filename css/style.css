@@ -15,6 +15,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #666;
+  overflow-x: hidden;
 }
 
 .body-fix {
@@ -36,7 +37,7 @@ h1 span {
 
 h2 {
   color: #231f20;
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 20px;
@@ -205,7 +206,6 @@ ul.linklist {
 }
 
 
-
 /* SIDEBAR (NOT the same as navbar. Get it straight!) */
 
 .sidebar {
@@ -221,10 +221,11 @@ ul.linklist {
 }
 
 .menu-text {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 600;
   color: #000;
   clear:both;
+  padding-top: 15px;
 }
 
 .menu-subtext {
@@ -363,12 +364,10 @@ ul.linklist {
   margin-top:5px;
 }
 
-/* ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID */
 
 /*-----------------------------------------------
 ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
 -----------------------------------------------*/
-
 
 #green h1 span {
   border-bottom: 6px solid #72BE49;
@@ -406,10 +405,16 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
 
 #green .carousel-control:focus i, .carousel-control:hover i {
   color: #72BE49;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 #green .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #72BE49;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 #yellow h1 span {
@@ -448,10 +453,16 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
 
 #yellow .carousel-control:focus i, .carousel-control:hover i {
   color: #FFC200;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 #yellow .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #FFC200;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 #red h1 span {
@@ -490,10 +501,16 @@ ELEMENTS WITH COLORS THAT CHANGE BASED ON BODY ID
 
 #red .carousel-control:focus i, .carousel-control:hover i {
   color: #EC5D57;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 #red .center-all-the-things:hover .icon, #green .center-all-the-things:focus .icon {
   background-color: #EC5D57;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 
@@ -665,10 +682,10 @@ SIDEBAR (NOT the same as navbar. Get it straight!)
   border-radius: 50%;
 }
 
+
 /*-----------
 SIDEBAR ICONS
 -----------*/
-
 
 .icon {
   background-color: #999;
@@ -678,12 +695,16 @@ SIDEBAR ICONS
   height: 50px;
   border-radius: 25px;
   float:left;
-  margin-left: 1px;
+  margin-left: 10px;
   margin-right: 1px;
 }
 
+.icon:first-child {
+  margin-left: -10px;
+}
+
 .icon-border {
-  border: 1px solid #DDD;
+  border: 2px solid #DDD;
   display: block;
   position: absolute;
   top: 2px;
@@ -694,18 +715,26 @@ SIDEBAR ICONS
 }
 
 .icon img {
-  width: 46px;
+  width: 42px;
   height: auto;
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: 0px;
+  left: 0px;
+}
+
+.center-all-the-things:hover .icon-2, .center-all-the-things:focus .icon-2 {
+  background-color: #FFC200 !important;
+}
+
+.center-all-the-things:hover .icon-3, .center-all-the-things:focus .icon-3 {
+  background-color: #EC5D57 !important;
 }
 
 
 /*-------------------------------------
 TOP MENU (MOBILE EQUIVALENT OF SIDEBAR)
 -------------------------------------*/
-/*
+
 .top-menu {
   background-color: #DDD;
 }
@@ -798,12 +827,27 @@ TOP MENU (MOBILE EQUIVALENT OF SIDEBAR)
 #red .top-menu-active {
   background-color: #EC5D57;
 }
-*/
+
+
+/*------------
+HOMEPAGE VIDEO
+------------*/
+
+.bg-video {
+
+}
+
+.big-video video {
+
+}
+
 
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
+
 @media (max-width: 767px) {
+
   .main{
     margin-left:0px;
     padding-right:20px;
@@ -876,7 +920,88 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   .col-md-3.sidebar-right {
     padding-right: 35px;
   }
+
+  .navbar-nav {
+    text-align: right;
+  }
+
+  .nav > li {
+    margin: 0 15px;
+    border-bottom: 1px solid #666;
+  }
+
+  .nav > li:last-child {
+    border: none;
+  }
+
+  .nav > li > a, .nav > li:last-child > a {
+    padding-right: 20px;
+  }
+
+  .navbar-inverse .navbar-collapse {
+    border-color: #DDD;
+  }
+
+  .nav li ul {
+    list-style: none;
+  }
+
+  .nav li ul li a {
+    letter-spacing: 1px;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+    padding-right: 22px;
+    font-size: 15px;
+    color: #999;
+    font-weight: 600;
+  }
+
+  .nav li ul li a img {
+    width: 20px;
+    height: auto;
+    margin-top: -5px;
+  }
+
+  .nav-green:hover, .nav-green:focus {
+    text-decoration: none;
+    color: #72BE49;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+
+  .nav-yellow:hover, .nav-yellow:focus {
+    text-decoration: none;
+    color: #FFC200;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+
+  .nav-red:hover, .nav-red:focus {
+    text-decoration: none;
+    color: #EC5D57;
+    -webkit-transition: all ease 0.5s;
+  	-moz-transition: all ease 0.5s;
+  	transition: all ease 0.5s;
+  }
+
+  #green .nav-active span, #yellow .nav-active span, #red .nav-active span {
+    border: none;
+  }
+
+  .navbar-right li {
+    display: inline-block;
+    border: none;
+  }
+
+  .navbar-right li a {
+    padding-right: 10px;
+  }
+
 }
+
 
 @media (min-width: 768px) {
 
@@ -889,6 +1014,10 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   h1 {
     font-size: 54px;
     line-height: 84px;
+  }
+
+  h2 {
+    font-size: 26px;
   }
 
   #navbar {
