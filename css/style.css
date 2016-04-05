@@ -123,9 +123,7 @@ ul.linklist {
  NAVBAR
  --- */
 
- .navbar-nav {
-   margin-left: 170px;
- }
+
 
 .navbar-fixed-top {
   border: 0;
@@ -913,7 +911,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     border: none;
   }
 
-  .navbar-right li a {		  .col-md-3.sidebar-right {
+  .navbar-right li a {
     padding-right: 10px;
   }
 
@@ -1095,6 +1093,10 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-top: 15px;
   }
 
+  .navbar-nav {
+    margin-left: 0px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -1106,6 +1108,9 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     padding-left:25px;
   }
 
+  .navbar-nav {
+    margin-left: 170px !important;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1134,6 +1139,8 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   .main {
     padding-right: 18%;
   }
+
+
 
 }
 
