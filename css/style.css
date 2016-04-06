@@ -242,9 +242,12 @@ ul.linklist {
   top: 30%;
   color: #fff;
   font-size: 50px;
-  margin-left: 245px;
+  margin-left: 140px;
   font-weight: bold;
   line-height: 50px;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
@@ -832,7 +835,7 @@ HOMEPAGE VIDEO
 ------------*/
 
 .bg-video {
-
+  position:fixed;
 }
 
 .big-video video {
