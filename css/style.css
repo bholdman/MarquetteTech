@@ -1073,7 +1073,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 @media (max-width: 768px) {
 
   .body-index {
-    position: fixed;
+    /*position: fixed;*/
   }
 
   .big-text {
