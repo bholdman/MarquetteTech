@@ -165,11 +165,11 @@ ul.linklist {
   padding-right: 0;
 }
 
-.navbar-right > li > a {
+/*.navbar-right > li > a {
   font-size: 26px;
   padding-right: 20px;
   padding-top: 10px;
-}
+}*/
 
 .navbar-toggle {
   color: #EEE;
@@ -849,15 +849,7 @@ HOMEPAGE VIDEO
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 420px) {
 
-  .big-text {
-    top: 20%;
-    font-size: 29px;
-    line-height: 32px;
-  }
-
-}
 
 @media (max-width: 767px) {
 
@@ -1184,6 +1176,16 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .main {
     padding-right: 12%;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .big-text {
+    top: 20%;
+    font-size: 29px;
+    line-height: 32px;
   }
 
 }
