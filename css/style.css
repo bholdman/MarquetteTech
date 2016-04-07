@@ -237,17 +237,13 @@ ul.linklist {
 
 .big-text{
   position: absolute;
-  z-index: 10;
-  width: 100%;
   top: 30%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
   color: #fff;
-  font-size: 50px;
-  margin-left: 140px;
+  font-size: 45px;
   font-weight: bold;
-  line-height: 50px;
-  background-color: rgba(0,0,0,0.5);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  line-height: 45px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
@@ -1149,6 +1145,9 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
 @media (min-width: 1200px) {
 
+  .big-text{
+    padding-left: 315px;
+  }
   .navbar-right {
     margin-right: 50px;
   }
