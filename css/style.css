@@ -122,6 +122,31 @@ ul.linklist {
   background-image: url("./img/MarquetteTech.jpg");
 }
 
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFF;
+  padding: 0;
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: auto;
+}
+
+.plax-bg-about {
+  background: url("./img/MarquetteTech.jpg") no-repeat top center;
+  position: fixed;
+  width: 100%;
+  height: 950px;
+  top: 133px;
+  left: 0;
+  z-index: -1;
+}
+
 /*-----
  NAVBAR
  --- */
