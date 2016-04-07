@@ -122,31 +122,6 @@ ul.linklist {
   background-image: url("./img/MarquetteTech.jpg");
 }
 
-.jumbotron {
-  background-color: rgba(0, 0, 0, 0);
-  color: #FFF;
-  padding: 0;
-  position: relative;
-  margin-bottom: 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-.jumbotron img {
-  width: 100%;
-  height: auto;
-}
-
-.plax-bg-about {
-  background: url("./img/MarquetteTech.jpg") no-repeat top center;
-  position: fixed;
-  width: 100%;
-  height: 950px;
-  top: 133px;
-  left: 0;
-  z-index: -1;
-}
-
 /*-----
  NAVBAR
  --- */
@@ -273,6 +248,8 @@ ul.linklist {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
@@ -872,6 +849,16 @@ HOMEPAGE VIDEO
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 420px) {
+
+  .big-text {
+    top: 20%;
+    font-size: 29px;
+    line-height: 32px;
+  }
+
+}
+
 @media (max-width: 767px) {
 
   .main{
@@ -1079,6 +1066,20 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .sidebar-right {
     max-width:400px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .body-index {
+    position: fixed;
+  }
+
+  .big-text {
+    top: 35%;
+    font-size: 38px;
+    line-height: 40px;
   }
 
 }
