@@ -118,6 +118,9 @@ ul.linklist {
 	transition: all ease 0.5s;
 }
 
+.out-video{
+  background-image: url("../img/MarquetteTech.jpg");
+}
 
 /*-----
  NAVBAR
@@ -223,11 +226,12 @@ ul.linklist {
   font-weight: 600;
   color: #000;
   clear:both;
-  padding-top: 15px;
+  padding-top: 10px;
+  line-height: 11px;
 }
 
 .menu-subtext {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
 }
 
