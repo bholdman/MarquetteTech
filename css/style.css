@@ -285,7 +285,7 @@ ul.linklist {
 }
 
 .sidebar-spaces, .sidebar-history, .sidebar-marquette {
-  height: 28%;
+  height: 32%;
   width: 100%;
   left:0px;
   border-bottom: 1px solid #d3d3d3;
@@ -305,11 +305,11 @@ ul.linklist {
 }
 
 .sidebar-initiatives, .sidebar-partners, .sidebar-food {
-  height: 36%;
+  height: 32%;
   width: 100%;
   left:0px;
   position: absolute;
-  top:64%;
+  top:68%;
   transition: all 0.75s ease;
   background-color: #f5f5f5;
   z-index: 100;
