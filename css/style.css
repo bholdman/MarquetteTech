@@ -118,10 +118,6 @@ ul.linklist {
 	transition: all ease 0.5s;
 }
 
-.out-video{
-  background-image: url("./img/MarquetteTech.jpg");
-}
-
 /*-----
  NAVBAR
  --- */
@@ -248,6 +244,8 @@ ul.linklist {
   font-size: 45px;
   font-weight: bold;
   line-height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
@@ -847,6 +845,16 @@ HOMEPAGE VIDEO
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
 
+@media (max-width: 420px) {
+
+  .big-text {
+    top: 20%;
+    font-size: 29px;
+    line-height: 32px;
+  }
+
+}
+
 @media (max-width: 767px) {
 
   .main{
@@ -1054,6 +1062,20 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
 
   .sidebar-right {
     max-width:400px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .body-index {
+    position: fixed;
+  }
+
+  .big-text {
+    top: 35%;
+    font-size: 38px;
+    line-height: 40px;
   }
 
 }
