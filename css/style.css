@@ -888,7 +888,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     position: relative;
     display: block;
     padding-bottom: 10px;
-    padding-right: 22px;
     font-size: 15px;
     color: #999;
     font-weight: 600;
@@ -922,14 +921,14 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   #green .nav-active span, #yellow .nav-active span, #red .nav-active span {
     border: none;
   }
-  .navbar-right li {
+  /*.navbar-right li {
     display: inline-block;
     border: none;
   }
 
   .navbar-right li a {
     padding-right: 10px;
-  }
+  }*/
 
   .col-md-3.sidebar-right {
     padding-right: 35px;
@@ -965,7 +964,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     position: relative;
     display: block;
     padding-bottom: 10px;
-    padding-right: 22px;
     font-size: 15px;
     color: #999;
     font-weight: 600;
@@ -1005,14 +1003,14 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     border: none;
   }
 
-  .navbar-right li {
+  /*.navbar-right li {
     display: inline-block;
     border: none;
   }
 
   .navbar-right li a {
     padding-right: 10px;
-  }
+  }*/
 
 }
 
