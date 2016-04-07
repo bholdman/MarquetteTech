@@ -832,6 +832,15 @@ TOP MENU (MOBILE EQUIVALENT OF SIDEBAR)
 }
 
 
+.btn-company {
+ padding: 0;
+ border: none;
+}
+
+.btn-company .img-responsive {
+ margin-bottom: 0;
+}
+
 /*------------
 HOMEPAGE VIDEO
 ------------*/

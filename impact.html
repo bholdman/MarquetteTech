@@ -193,19 +193,27 @@
           <p>Research indicates that most net new jobs are created by companies less than five years old, and the technology communications sector is leading global growth. Our local technology sector is emerging and needs density and infrastructure to grow. In just the last year, Codefi and its affiliates have created 12 technology-based startups that have attracted over $1.2 million in private investments and created over 30 jobs. The Marquette Tech District is a long-term effort to attract, nurture, and promote Cape Girardeau’s tech economy through a combination of technology-enabled initiatives and business incentives, private business support and member-driven programming.</p>
 
           <div class="row">
-            <div class="col-sm-3 col-xs-6">
-              <img alt="carGO" class="img-thumbnail img-responsive" src="img/companies/cargo.png" />
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img alt="Impress" class="img-thumbnail img-responsive" src="img/companies/impress.png" />
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img alt="Conflux" class="img-thumbnail img-responsive" src="img/companies/conflux.png" />
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img alt="LZAD" class="img-thumbnail img-responsive" src="img/companies/lzad.png" />
-            </div>
-          </div>
+           <div class="col-sm-3 col-xs-6">
+             <button type="button" class="btn btn-company" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="carGO" data-content="Uber for small markets. Set to launch in Missouri and Texas markets in 2016.">
+               <img alt="carGO" class="img-thumbnail img-responsive" src="img/companies/cargo.png" />
+             </button>
+           </div>
+           <div class="col-sm-3 col-xs-6">
+             <button type="button" class="btn btn-company" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Impress" data-content="Weekly reporting app for technical talent.">
+               <img alt="Impress" class="img-thumbnail img-responsive" src="img/companies/impress.png" />
+             </button>
+           </div>
+           <div class="col-sm-3 col-xs-6">
+             <button type="button" class="btn btn-company" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="Conflux" data-content="Mobile and online pay and loyalty platform set to launch in mid market and national retailers in 2016.">
+               <img alt="Conflux" class="img-thumbnail img-responsive" src="img/companies/conflux.png" />
+             </button>
+           </div>
+           <div class="col-sm-3 col-xs-6">
+             <button type="button" class="btn btn-company" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-title="LZAD" data-content="Reducing the risk of serious incident during the landing of an emergency aircraft.">
+               <img alt="LZAD" class="img-thumbnail img-responsive" src="img/companies/lzad.png" />
+             </button>
+           </div>
+         </div>
 
           <ul class="linklist">
             <li><a href="mailto:info@marquettetech.com">Get Involved</a></li>
@@ -233,6 +241,13 @@
     };
   });
 </script>
+
+<!-- Enable Popovers on Company Logos -->
+ <script>
+   $(function () {
+     $('[data-toggle="popover"]').popover()
+   })
+ </script>
 
 </body>
 </html>
