@@ -948,7 +948,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .nav > li > a, .nav > li:last-child > a {
-    padding-right: 20px;
+    padding-right: 0px;
   }
 
   .navbar-inverse .navbar-collapse {
