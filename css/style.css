@@ -210,12 +210,12 @@ ul.linklist {
 .sidebar {
   top: 120px;
   overflow-y: hidden !important;
-  padding:0px !important;
+  padding: 0 !important;
   cursor: pointer;
-  min-width:315px;
+  min-width: 315px;
 }
 
-.first{
+.first {
   margin-top: 50px;
 }
 
@@ -233,11 +233,11 @@ ul.linklist {
   font-style: italic;
 }
 
-.sidebar-about{
+.sidebar-about {
   padding-top: 30px;
 }
 
-.big-text{
+.big-text {
   position: absolute;
   top: 30%;
   width: 100%;
@@ -253,10 +253,10 @@ ul.linklist {
 .sidebar-about, .sidebar-impact, .sidebar-codefi {
   height: 36%;
   width: 100%;
-  left:0px;
+  left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
-  top:0;
+  top: 0;
   transition: all 0.75s ease;
   background-color: #f5f5f5;
   z-index: 100;
@@ -265,49 +265,49 @@ ul.linklist {
 .sidebar-programs {
   height: 50%;
   width: 100%;
-  left:0px;
+  left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
-  top:0;
+  top: 0;
 }
 
 .sidebar-connect {
   height: 50%;
   width: 100%;
-  left:0px;
+  left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
-  bottom:0;
+  bottom: 0;
 }
 
-.sidebar-about.slideUp{
+.sidebar-about.slideUp {
   top: -36%;
 }
 
 .sidebar-spaces, .sidebar-history, .sidebar-marquette {
   height: 32%;
   width: 100%;
-  left:0px;
+  left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
-  top:36%;
+  top: 36%;
   transition: all 0.75s ease;
   background-color: #f5f5f5;
   z-index: 100;
 }
 
-.sidebar-spaces.slideUp{
+.sidebar-spaces.slideUp {
   top: -36%;
 }
 
-.sidebar-spaces.slideDown{
+.sidebar-spaces.slideDown {
   top: 100%;
 }
 
 .sidebar-initiatives, .sidebar-partners, .sidebar-food {
   height: 32%;
   width: 100%;
-  left:0px;
+  left: 0;
   position: absolute;
   top:68%;
   transition: all 0.75s ease;
@@ -315,11 +315,11 @@ ul.linklist {
   z-index: 100;
 }
 
-.sidebar-initiatives.slideDown{
+.sidebar-initiatives.slideDown {
   top: 136%;
 }
 
-.sidebar-about-sub{
+.sidebar-about-sub {
   display: none;
   height:100%;
   position:absolute;
@@ -329,7 +329,7 @@ ul.linklist {
   left: 0;
 }
 
-.sidebar-spaces-sub{
+.sidebar-spaces-sub {
   display: none;
   height:100%;
   position:absolute;
@@ -339,7 +339,7 @@ ul.linklist {
   left: 0;
 }
 
-.sidebar-initiatives-sub{
+.sidebar-initiatives-sub {
   display: none;
   height:100%;
   position:absolute;
@@ -349,20 +349,20 @@ ul.linklist {
   left: 0;
 }
 
-.collapse-it{
+.collapse-it {
   background-color: #333;
-  height:5%;
+  height: 5%;
   display: none;
   position: absolute;
-  bottom:0px;
+  bottom: 0;
   width: 100%;
-  left: 0px;
-  z-index:100;
+  left: 0;
+  z-index: 100;
 }
 
-.collapse-it h2{
-  color:#fff;
-  margin-top:5px;
+.collapse-it h2 {
+  color: #FFF;
+  margin-top: 5px;
 }
 
 
@@ -695,7 +695,7 @@ SIDEBAR ICONS
   width: 50px;
   height: 50px;
   border-radius: 25px;
-  float:left;
+  float: left;
   margin-left: 10px;
   margin-right: 1px;
 }
@@ -719,8 +719,8 @@ SIDEBAR ICONS
   width: 42px;
   height: auto;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 
 .center-all-the-things:hover .icon-2, .center-all-the-things:focus .icon-2 {
@@ -847,40 +847,41 @@ HOMEPAGE VIDEO
   position:fixed;
 }
 
-.big-video video {
-
-}
-
 
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
 --------------------------------------------------------------------------------------------------*/
 
-
-
 @media (max-width: 767px) {
 
   .main{
-    margin-left:0px;
+    margin-left: 0;
+    padding-right: 20px;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    text-align: right;
     padding-right:20px;
   }
 
-  .navbar-nav {		    margin-left:0px;
-    text-align: right;		    padding-right:20px;
-  }
   .nav > li {
     margin: 0 15px;
     border-bottom: 1px solid #666;
   }
+
   .nav > li > a, .nav > li:last-child > a {
     padding-right: 20px;
   }
+
   .navbar-inverse .navbar-collapse {
     border-color: #DDD;
   }
+
   .nav li ul {
     list-style: none;
   }
+
   .nav li ul li a {
     letter-spacing: 1px;
     position: relative;
@@ -890,11 +891,13 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     color: #999;
     font-weight: 600;
   }
+
   .nav li ul li a img {
     width: 20px;
     height: auto;
     margin-top: -5px;
   }
+
   .nav-green:hover, .nav-green:focus {
     text-decoration: none;
     color: #72BE49;
@@ -902,6 +905,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   	-moz-transition: all ease 0.5s;
   	transition: all ease 0.5s;
   }
+
   .nav-yellow:hover, .nav-yellow:focus {
     text-decoration: none;
     color: #FFC200;
@@ -909,6 +913,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   	-moz-transition: all ease 0.5s;
   	transition: all ease 0.5s;
   }
+
   .nav-red:hover, .nav-red:focus {
     text-decoration: none;
     color: #EC5D57;
@@ -916,17 +921,10 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   	-moz-transition: all ease 0.5s;
   	transition: all ease 0.5s;
   }
+
   #green .nav-active span, #yellow .nav-active span, #red .nav-active span {
     border: none;
   }
-  /*.navbar-right li {
-    display: inline-block;
-    border: none;
-  }
-
-  .navbar-right li a {
-    padding-right: 10px;
-  }*/
 
   .col-md-3.sidebar-right {
     padding-right: 35px;
@@ -946,7 +944,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .nav > li > a, .nav > li:last-child > a {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .navbar-inverse .navbar-collapse {
@@ -1000,15 +998,6 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   #green .nav-active span, #yellow .nav-active span, #red .nav-active span {
     border: none;
   }
-
-  /*.navbar-right li {
-    display: inline-block;
-    border: none;
-  }
-
-  .navbar-right li a {
-    padding-right: 10px;
-  }*/
 
 }
 
@@ -1062,16 +1051,13 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .sidebar-right {
-    max-width:400px;
+    max-width: 400px;
   }
 
 }
 
-@media (max-width: 768px) {
 
-  .body-index {
-    /*position: fixed;*/
-  }
+@media (max-width: 768px) {
 
   .big-text {
     top: 35%;
@@ -1080,6 +1066,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
 }
+
 
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -1120,10 +1107,11 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .navbar-nav {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
 }
+
 
 @media (min-width: 992px) {
 
@@ -1138,6 +1126,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     margin-left: 170px !important;
   }
 }
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -1162,19 +1151,20 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
     font-size: 20px;
     padding-right: 15px;
   }
+
   .main {
     padding-right: 18%;
   }
 
-
-
 }
+
 
 @media (min-width: 1200px) {
 
   .big-text{
     padding-left: 315px;
   }
+
   .navbar-right {
     margin-right: 50px;
   }
@@ -1184,6 +1174,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
 }
+
 
 @media (max-width: 420px) {
 
