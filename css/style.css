@@ -847,6 +847,14 @@ HOMEPAGE VIDEO
   position:fixed;
 }
 
+/*-------------------------------------------------------
+GIVE STARTUP LOGOS ON IMPACT PAGE BOTTOM-MARGIN ON MOBILE
+-------------------------------------------------------*/
+
+.impact {
+  margin-bottom: 15px;
+}
+
 
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
