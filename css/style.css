@@ -1109,7 +1109,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .navbar-right > li > a {
-    font-size: 18px;
+    font-size: 11px;
     padding-right: 5px;
     padding-top: 15px;
   }
@@ -1131,7 +1131,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .navbar-nav {
-    margin-left: 170px !important;
+    margin-left: 0 !important;
   }
 }
 
@@ -1156,7 +1156,7 @@ FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA Q
   }
 
   .navbar-right > li > a {
-    font-size: 20px;
+    font-size: 17px;
     padding-right: 15px;
   }
 
