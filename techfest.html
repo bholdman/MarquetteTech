@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+<link rel="manifest" href="img/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Marquette TechFest</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,300,200' rel='stylesheet' type='text/css'>
+    <!-- Font Awesome, because I apparently can't live without it anymore -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body{
+        background-color: #231f20;
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        font-weight: 300;
+      }
+      .nav li a{
+        padding-top: 30px;
+        font-size: 25px;
+        color: #fec20e !important;
+      }
+      .navbar-brand{
+        padding-top:25px;
+        font-size: 30px;
+      }
+
+      .intro{
+        margin-top:80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url(img/bg-marquette.jpg);
+        background-position: center top;
+        background-size: cover;
+      }
+
+      .allUpper{
+        text-transform: uppercase;
+      }
+
+      p{
+        color: #fff;
+      }
+
+      .ghost-button {
+        color: #fff;
+        background: transparent;
+        border: 1px solid #fff;
+        font-size: 17px;
+        padding: 15px;
+        font-weight: normal;
+        margin: 6px 0;
+        margin-right: 12px;
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        min-width: 120px;
+      }
+
+      .ghost-button:hover, .ghost-button:active {
+        color:#231f20;
+        background:#fff;
+        text-decoration: none;
+      }
+
+      .event{
+        margin-top:20px;
+        margin-bottom:60px;
+        border-left: 2px solid #585858;
+        padding: 75px 20px;
+      }
+
+      .fixed {
+        position: fixed;
+        left:0;
+        top: 150px;
+      }
+
+      h1{
+        font-family: 'Raleway', sans-serif;
+        font-size: 60px;
+        font-weight: 200;
+        letter-spacing: 3px;
+      }
+
+      .event .heading {
+        font-size: 28px;
+        color: #9d9d9d;
+        line-height: 25px;
+      }
+
+      .event .event-time {
+        font-size: 28px;
+        color: #ec5e58;
+        line-height: 25px;
+      }
+
+      .event .event-description {
+        color: #fff;
+        padding-top: 30px;
+      }
+
+      #fixed-image img{
+        height: 320px;
+        margin-top: 10px;
+        width: auto;
+      }
+
+      .disabled{
+        opacity: .25;
+      }
+
+
+      /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      .nav li a {
+        font-size: 20px;
+      }
+
+      #fixed-image img{
+        left: -60px;
+        position: relative;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .invite .col-md-4{
+        display: none;
+      }
+      .navbar-brand {
+        font-size: 20px;
+      }
+
+      .nav li a {
+        font-size: 15px;
+      }
+
+      #fixed-image img{
+        left: 0px;
+        position: relative;
+      }
+
+      #Join h1{
+        font-size: 50px;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      #fixed-image img{
+        left: -50px;
+        position: relative;
+      }
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#231f20; border-bottom: 1px solid #585858; height:80px; margin-bottom: 0px;">
+      <div class="container allUpper">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" ><span style="color:#73bf4a">Marquette</span> Techfest</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#schedule">Schedule of Events</a></li>
+            <li><a href="#about">Join the Celebration</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div><!-- End Nav -->
+
+    <div class=" intro text-center allUpper">
+      <div class="container">
+
+
+        <img src="img/TECHFEST-info.png" class="img-responsive" style="width:90%; margin-left: 5%; margin-right: 5%;"/>
+
+        <p style="margin:60px">A special opportunity to see the renovation in progress and<br />be the first to celebrate from the rooftop.</p>
+        <a href="#" class="allUpper ghost-button">Join The Celebration</a>
+      </div>
+    </div>
+
+    <!-- Full Width Green Section with Invite -->
+    <div class="invite" style="background-color:#73bf4a; padding: 15px; height: 200px;">
+      <div class="container">
+        <div class="col-md-8">
+          <p style="font-size: 22px;">Join us from 6 to 9 p.m. Thursday, July 28, 2016 at the iconic Marquette Tower (338 Broadway) to celebrate the region's tech and entrpreneurial community, support non-profit groups and recognize Missouri's best entrpreneurs.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="http://placehold.it/350x300" style="position: relative; top: -60px;" class="img-responsive" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Schedule of Events -->
+    <div id="schedule" class="container text-center" style="color:#fff"><h1>Schedule of Events</h1></div>
+    <div id="fixed-image" class="col-xs-3" style="padding-left:0px;">
+      <img src="img/event-1.png" id="event-1-image" class="hidden-xs hidden-sm" />
+      <img src="img/event-2.png" id="event-2-image" class="hidden-xs hidden-sm" style="display:none;" />
+      <img src="img/event-3.png" id="event-3-image" class="hidden-xs hidden-sm" style="display:none;" />
+      <img src="img/event-4.png" id="event-4-image" class="hidden-xs hidden-sm" style="display:none;" />
+      <img src="img/event-5.png" id="event-5-image" class="hidden-xs hidden-sm" style="display:none;" />
+      <img src="img/event-1-sm.png" id="event-1-image-sm" class="hidden-md hidden-lg" />
+      <img src="img/event-2-sm.png" id="event-2-image-sm" class="hidden-md hidden-lg" style="display:none;" />
+      <img src="img/event-3-sm.png" id="event-3-image-sm" class="hidden-md hidden-lg" style="display:none;" />
+      <img src="img/event-4-sm.png" id="event-4-image-sm" class="hidden-md hidden-lg" style="display:none;" />
+      <img src="img/event-5-sm.png" id="event-5-image-sm" class="hidden-md hidden-lg" style="display:none;" />
+    </div>
+    <div id="event-list" class="col-xs-9" style="margin-bottom: 100px;">
+      <div class="event event-1">
+        <div class="heading">Reception and Demo Day</div>
+        <div class="event-time">6:00 p.m.</div>
+        <div class="event-description">Meet aspiring tech entrepreneurs representing over 20 countries as they prepare to compete for $100,000 in cash and services and the chance to build their businesses with the support of the community in Cape Girardeau. Also meet youth and adults demonstrating their technology solutions from a civic hackathon and code studio earlier in the week.</div>
+      </div>
+      <div class="event event-2 disabled">
+        <div class="heading">Ascent - Sneak Peak</div>
+        <div class="event-time" style="color:#73bf49">7:00 p.m.</div>
+        <div class="event-description">On the way the rooftop, get a sneak peek at the new Maker Space on the 2nd floor - a new lab for technology developers and entrepreneurs to create prototypes and assemble and test, software and hardware solutions, and check out the 6th floor - the new home of the expanded Codefi coworking tech business center and coolest tech-powered office environment around.</div>
+      </div>
+      <div class="event event-3 disabled">
+        <div class="heading">Program</div>
+        <div class="event-time" style="color:#fdc20f">7:30 p.m.</div>
+        <div class="event-description">
+          <ul>
+          	<li>Welcome from the Chairman of the Marquette Tech District Foundation, Inc.</li>
+            <li>Induction of the inaugural class of the Missouri Entrepreneur Hall of Fame</li>
+            <ul style="color:#fdc20f">
+            	<li>Jack Dorsey, founder, CEO of Twitter and co-founder of Square</li>
+              <li>Rich Kinder, co-founder and executive chairman of Kinder Morgan, Inc.</li>
+              <li>Jerry Stone, former chairman of Claremont Technology, Inc.</li>
+              <li>Earl Norman, founder, Health Services Corp. of America (Med Assets)</li>
+            </ul>
+            <li>Special Announcement from the Missouri Technology Corporation</li>
+            <li>Special Announcement from the Delta Regional Authority</li>
+          </ul>
+        </div>
+      </div>
+      <div class="event event-4 disabled">
+        <div class="heading">Lighting of the Building</div>
+        <div class="event-time" style="color:#fdc20f">8:00 p.m.</div>
+        <div class="event-description">Join Jerry Howe, CEO of Big River Communications as he flips the switch that lights up the Marquette Tower with Gigabit internet service, marking completion of the first phase of the project to create a fiberhood and broadband public wi-fi network in downtown Cape Girardeau.</div>
+      </div>
+      <div class="event event-5 disabled">
+        <div class="heading">After Party</div>
+        <div class="event-time" style="color:#73bf49">8:30 p.m.</div>
+        <div class="event-description">Descend to the lobby or stay on the rooftop to meet the Missouri Entrepreneur Hall of Fame inductees and continue celebrating the regions tech and entrepreneurial community.</div>
+      </div>
+    </div>
+
+    <!-- Full Width Red Section -->
+    <div class="red-section" style="margin-bottom: 100px; background-color:#ec5e58; margin-top: 100px; padding: 15px; height: 200px;">
+      <div class="container">
+        <div class="text-center allUpper">
+          <div id="Join" style="color:#fff"><h1>Join The Celebration</h1></div>
+          <a href="#" class="ghost-button">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(window).scroll(function() {
+        if(($(window).scrollTop() - $('#schedule').offset().top)  >=   0) {
+          $('#fixed-image').addClass('fixed');
+          $('#event-list').addClass('col-xs-offset-3');
+          $('#event-1-image').show();
+          $('#event-2-image').hide();
+          $('#event-3-image').hide();
+          $('#event-4-image').hide();
+          $('#event-5-image').hide();
+          $('#event-1-image-sm').show();
+          $('#event-2-image-sm').hide();
+          $('#event-3-image-sm').hide();
+          $('#event-4-image-sm').hide();
+          $('#event-5-image-sm').hide();
+
+          $('.event-1').removeClass('disabled');
+          $('.event-2').addClass('disabled');
+          $('.event-3').addClass('disabled');
+          $('.event-4').addClass('disabled');
+          $('.event-5').addClass('disabled');
+        } else {
+          $('#fixed-image').removeClass('fixed');
+          $('#event-list').removeClass('col-md-offset-3');
+        }
+
+        if(($(window).scrollTop() - $('.event-1').offset().top)  >=   -90) {
+          $('#event-1-image').hide();
+          $('#event-2-image').show();
+          $('#event-3-image').hide();
+          $('#event-4-image').hide();
+          $('#event-5-image').hide();
+          $('#event-1-image-sm').hide();
+          $('#event-2-image-sm').show();
+          $('#event-3-image-sm').hide();
+          $('#event-4-image-sm').hide();
+          $('#event-5-image-sm').hide();
+
+          $('.event-1').addClass('disabled');
+          $('.event-2').removeClass('disabled');
+          $('.event-3').addClass('disabled');
+          $('.event-4').addClass('disabled');
+          $('.event-5').addClass('disabled');
+        }
+
+        if(($(window).scrollTop() - $('.event-2').offset().top)  >=   -90) {
+          $('#event-1-image').hide();
+          $('#event-2-image').hide();
+          $('#event-3-image').show();
+          $('#event-4-image').hide();
+          $('#event-5-image').hide();
+          $('#event-1-image-sm').hide();
+          $('#event-2-image-sm').hide();
+          $('#event-3-image-sm').show();
+          $('#event-4-image-sm').hide();
+          $('#event-5-image-sm').hide();
+
+          $('.event-1').addClass('disabled');
+          $('.event-2').addClass('disabled');
+          $('.event-3').removeClass('disabled');
+          $('.event-4').addClass('disabled');
+          $('.event-5').addClass('disabled');
+        }
+
+        if(($(window).scrollTop() - $('.event-3').offset().top)  >=   -90) {
+          $('#event-1-image').hide();
+          $('#event-2-image').hide();
+          $('#event-3-image').hide();
+          $('#event-4-image').show();
+          $('#event-5-image').hide();
+          $('#event-1-image-sm').hide();
+          $('#event-2-image-sm').hide();
+          $('#event-3-image-sm').hide();
+          $('#event-4-image-sm').show();
+          $('#event-5-image-sm').hide();
+
+          $('.event-1').addClass('disabled');
+          $('.event-2').addClass('disabled');
+          $('.event-3').addClass('disabled');
+          $('.event-4').removeClass('disabled');
+          $('.event-5').addClass('disabled');
+        }
+
+        if(($(window).scrollTop() - $('.event-4').offset().top)  >=   -90) {
+          $('#event-1-image').hide();
+          $('#event-2-image').hide();
+          $('#event-3-image').hide();
+          $('#event-4-image').hide();
+          $('#event-5-image').show();
+          $('#event-1-image-sm').hide();
+          $('#event-2-image-sm').hide();
+          $('#event-3-image-sm').hide();
+          $('#event-4-image-sm').hide();
+          $('#event-5-image-sm').show();
+
+          $('.event-1').addClass('disabled');
+          $('.event-2').addClass('disabled');
+          $('.event-3').addClass('disabled');
+          $('.event-4').addClass('disabled');
+          $('.event-5').removeClass('disabled');
+        }
+      });
+    </script>
+</body>
+</html>
