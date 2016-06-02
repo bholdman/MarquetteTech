@@ -435,6 +435,25 @@
           $('.event-4').addClass('disabled');
           $('.event-5').removeClass('disabled');
         }
+
+        if(($(window).scrollTop() - $('.event-5').offset().top)  >=   -90) {
+          $('#event-1-image').hide();
+          $('#event-2-image').hide();
+          $('#event-3-image').hide();
+          $('#event-4-image').hide();
+          $('#event-5-image').hide();
+          $('#event-1-image-sm').hide();
+          $('#event-2-image-sm').hide();
+          $('#event-3-image-sm').hide();
+          $('#event-4-image-sm').hide();
+          $('#event-5-image-sm').hide();
+
+          $('.event-1').addClass('disabled');
+          $('.event-2').addClass('disabled');
+          $('.event-3').addClass('disabled');
+          $('.event-4').addClass('disabled');
+          $('.event-5').removeClass('disabled');
+        }
       });
     </script>
 </body>
