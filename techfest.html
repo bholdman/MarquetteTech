@@ -178,7 +178,13 @@
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+      .event  {
+        opacity: 1;
+      }
 
+      #Join h1 {
+        font-size: 40px;
+      }
     }
 
     /* Extra Small Devices, Phones */
@@ -187,11 +193,27 @@
         left: -50px;
         position: relative;
       }
+
+      .invite p{
+        font-size: 17px !important;
+        text-align: center;
+      }
+
+      #Join h1 {
+        font-size: 30px;
+      }
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (max-width : 320px) {
+      .invite p{
+        font-size: 15px !important;
+        text-align: center;
+      }
 
+      .intro p{
+        margin: 20px !important;
+      }
     }
     </style>
   </head>
@@ -295,7 +317,7 @@
     </div>
 
     <!-- Full Width Red Section -->
-    <div class="red-section" style="margin-bottom: 100px; background-color:#ec5e58; margin-top: 100px; padding: 15px; height: 200px;">
+    <div class="red-section clearfix" style="clear:both; margin-bottom: 100px; background-color:#ec5e58; margin-top: 100px; padding: 15px; height: 200px;">
       <div class="container">
         <div class="text-center allUpper">
           <div id="Join" style="color:#fff"><h1>Join The Celebration</h1></div>
