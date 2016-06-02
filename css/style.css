@@ -250,7 +250,7 @@ ul.linklist {
   padding-bottom: 10px;
 }
 
-.sidebar-about, .sidebar-impact, .sidebar-codefi {
+.sidebar-about, .sidebar-impact, .sidebar-codefi, .sidebar-programs {
   height: 36%;
   width: 100%;
   left: 0;
@@ -262,29 +262,29 @@ ul.linklist {
   z-index: 100;
 }
 
-.sidebar-programs {
+/*.sidebar-programs {
   height: 50%;
   width: 100%;
   left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
   top: 0;
-}
+}*/
 
-.sidebar-connect {
+/*.sidebar-connect {
   height: 50%;
   width: 100%;
   left: 0;
   border-bottom: 1px solid #d3d3d3;
   position: absolute;
   bottom: 0;
-}
+}*/
 
 .sidebar-about.slideUp {
   top: -36%;
 }
 
-.sidebar-spaces, .sidebar-history, .sidebar-marquette {
+.sidebar-spaces, .sidebar-history, .sidebar-marquette, .sidebar-programs {
   height: 32%;
   width: 100%;
   left: 0;
@@ -304,7 +304,7 @@ ul.linklist {
   top: 100%;
 }
 
-.sidebar-initiatives, .sidebar-partners, .sidebar-food {
+.sidebar-initiatives, .sidebar-partners, .sidebar-food, .sidebar-connect {
   height: 32%;
   width: 100%;
   left: 0;
