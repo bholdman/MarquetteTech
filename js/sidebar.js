@@ -5,7 +5,7 @@ $( ".sidebar-about" ).click(function() {
   $( ".sidebar-initiatives" ).toggleClass("slideDown");
   $(".collapse-it").toggle();
   $(".collapse-it").toggleClass("about");
-  window.location.href = "./about.html";
+  // window.location.href = "./about.html";
 });
 
 $( ".sidebar-spaces" ).click(function() {
