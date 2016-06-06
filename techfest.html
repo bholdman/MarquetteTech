@@ -74,8 +74,8 @@
 
       .ghost-button {
         color: #fff;
-        background: transparent;
-        border: 1px solid #fff;
+        background: #D2A10F;
+        border: 1px solid #fec20e;
         font-size: 17px;
         padding: 15px;
         font-weight: normal;
@@ -88,9 +88,10 @@
       }
 
       .ghost-button:hover, .ghost-button:active {
-        color:#231f20;
-        background:#fff;
+        color:#fff;
+        background:#73bf4a;
         text-decoration: none;
+        /*font-weight: bold;*/
       }
 
       .event{
@@ -183,7 +184,12 @@
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
       .event  {
-        opacity: 1;
+        /*opacity: 1;*/
+      }
+
+      .invite p{
+        font-size: px !important;
+        text-align: center;
       }
 
       #Join h1 {
@@ -258,8 +264,8 @@
         <img src="img/TECHFEST-info.png" class="img-responsive" style="width:90%; margin-left: 5%; margin-right: 5%;"/>
 
         <p style="margin:60px">A special opportunity to see the renovation in progress and<br />be the first to celebrate from the rooftop.</p>
-        <p>-<em> First 50 tickets get special VIP treatment! </em>-</p>
-        <a href="https://marquettetechfest2016.eventbrite.com/" class="allUpper ghost-button">Join The Celebration</a>
+        <p>-<em><span style="font-weight:bold"> FIRST 50 TICKETS GET VIP TREATMENT! </span></em>-<br /><em>Be the first to use carGO, a new local on-demand transportation app, to get your group to and from the Gala!</em></p>
+        <a href="https://marquettetechfest2016.eventbrite.com/" class="allUpper ghost-button">LIMITED SEATS - PURCHASE TICKETS NOW</a>
       </div>
     </div>
 
@@ -273,7 +279,7 @@ development, and recognizes Missouri’s best entrepreneurs.
 Be the first to party from the rooftop!</p>
         </div>
         <div class="col-md-5">
-          <div  id="video-container" style="position: relative; top: -40px;" class="embed-responsive embed-responsive-16by9" ><iframe width="533" height="300" src="https://www.youtube.com/embed/9e3jVdX8l6k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+          <div  id="video-container" style="position: relative; top: -40px;" class="embed-responsive embed-responsive-16by9 hidden-xs hidden-sm" ><iframe width="533" height="300" src="https://www.youtube.com/embed/9e3jVdX8l6k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
         </div>
       </div>
     </div>
@@ -338,13 +344,11 @@ Be the first to party from the rooftop!</p>
       <div class="container">
         <div class="text-center allUpper">
           <div id="Join" style="color:#fff"><h1>Join The Celebration</h1></div>
-          <a href="https://marquettetechfest2016.eventbrite.com/" class="ghost-button">Buy Tickets</a>
-          <p style="margin-top:15px;">-<em> First 50 tickets get special VIP treatment! </em>-</p>
+          <a href="https://marquettetechfest2016.eventbrite.com/" class="ghost-button">LIMITED SEATS - PURCHASE TICKETS NOW</a>
+          <p style="margin-top:10px;">-<em><span style="font-weight:bold"> FIRST 50 TICKETS GET VIP TREATMENT! </span></em>-<br /><em>Be the first to use carGO, a new local on-demand transportation app, to get your group to and from the Gala!</em></p>
         </div>
       </div>
     </div>
-
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
