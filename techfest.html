@@ -347,7 +347,7 @@ Be the first to party from the rooftop!</p>
     </div>
 
     <!-- Full Width Red Section -->
-    <div class="red-section clearfix" style="clear:both; margin-bottom: 100px; background-color:#ec5e58; margin-top: 100px; padding: 15px; height: 250px;">
+    <div class="red-section clearfix" style="clear:both; margin-bottom: 100px; background-color:#ec5e58; margin-top: 100px; padding: 15px; height: 300px;">
       <div class="container">
         <div class="text-center allUpper">
           <div id="Join" style="color:#fff"><h1>Join The Celebration</h1></div>
@@ -476,12 +476,16 @@ Be the first to party from the rooftop!</p>
           $('#event-3-image-sm').hide();
           $('#event-4-image-sm').hide();
           $('#event-5-image-sm').hide();
+          $('#event-5-image-sm').css('visibility', 'hidden');
 
           $('.event-1').addClass('disabled');
           $('.event-2').addClass('disabled');
           $('.event-3').addClass('disabled');
           $('.event-4').addClass('disabled');
           $('.event-5').removeClass('disabled');
+        }
+        else {
+          $('#event-5-image-sm').css('visibility', 'visible');
         }
       });
     </script>
