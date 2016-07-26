@@ -346,12 +346,12 @@ Be the first to party from the rooftop!</p>
           </ul>
         </div>
       </div>
-      <div class="event event-4 disabled">
+      <!-- <div class="event event-4 disabled">
         <div class="heading">Lighting of the Building</div>
         <div class="event-time" style="color:#fdc20f">8:00 p.m.</div>
         <div class="event-description">Join Jerry Howe, CEO of Big River Communications as he flips the switch that lights up the Marquette Tower with Gigabit internet service, marking completion of the first phase of the project to create a fiberhood and broadband public wi-fi network in downtown Cape Girardeau.</div>
-      </div>
-      <div class="event event-5 disabled">
+      </div> -->
+      <div class="event event-4 disabled">
         <div class="heading">After Party</div>
         <div class="event-time" style="color:#73bf49">8:30 p.m.</div>
         <div class="event-description">Descend to the lobby or stay on the rooftop to meet special guests, international startup competitors and continue celebrating the regions tech and entrepreneurial community.</div>
@@ -443,13 +443,13 @@ Be the first to party from the rooftop!</p>
           $('#event-1-image').hide();
           $('#event-2-image').hide();
           $('#event-3-image').hide();
-          $('#event-4-image').show();
-          $('#event-5-image').hide();
+          $('#event-5-image').show();
+          // $('#event-5-image').hide();
           $('#event-1-image-sm').hide();
           $('#event-2-image-sm').hide();
           $('#event-3-image-sm').hide();
-          $('#event-4-image-sm').show();
-          $('#event-5-image-sm').hide();
+          $('#event-5-image-sm').show();
+          // $('#event-5-image-sm').hide();
 
           $('.event-1').addClass('disabled');
           $('.event-2').addClass('disabled');
@@ -458,17 +458,17 @@ Be the first to party from the rooftop!</p>
           $('.event-5').addClass('disabled');
         }
 
-        if(($(window).scrollTop() - $('.event-4').offset().top)  >=   -90) {
+        if(($(window).scrollTop() - $('.event-4').offset().top)  >=   -10) {
           $('#event-1-image').hide();
           $('#event-2-image').hide();
           $('#event-3-image').hide();
           $('#event-4-image').hide();
-          $('#event-5-image').show();
+          $('#event-5-image').hide();
           $('#event-1-image-sm').hide();
           $('#event-2-image-sm').hide();
           $('#event-3-image-sm').hide();
           $('#event-4-image-sm').hide();
-          $('#event-5-image-sm').show();
+          $('#event-5-image-sm').hide();
 
           $('.event-1').addClass('disabled');
           $('.event-2').addClass('disabled');
