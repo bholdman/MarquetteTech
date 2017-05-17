@@ -88,10 +88,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     <div class="container-fluid" style="padding:0px;">
-      <div class="col-md-10 main out-video" style="padding-left:0px; padding:0px;margin-left:0px;">
+      <div class="out-video" style="padding-left:0px; padding:0px;margin-left:0px;">
         <div class="video-viewport">
           <!-- <video autobuffer="autobuffer" loop="loop" autoplay="autoplay" muted="muted" id="video-background" src="img/home-video.mp4"></video> -->
-          <video preload width="640" height="360" autoplay loop muted class="fillWidth fadeIn animated" id="video-background" poster="img/MarquetteTech.jpg">
+          <video autoplay loop muted class="fillWidth fadeIn animated" id="video-background" poster="img/MarquetteTech.jpg">
               <source src="https://s3.amazonaws.com/marquette-tech/MarquetteTechDistrict.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
 
@@ -107,56 +107,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/sidebar.js"></script>
-  <!-- Fix Body when Mobile Dropdown Menu is Deployed -->
-<script>
-  $( document ).ready(function() {
-    $('.navbar-toggle').click(function() {
-       $('body').toggleClass('body-fix')
-    });
-    if($( ".first" ).offset().top < 180){
-      $( ".logo" ).toggleClass( "hidden" );
-      $( ".logo-mobile" ).toggleClass( "visible-xs" )
-    };
-  });
 
-</script>
-
-  <script>
-    var min_w = 300; // minimum video width allowed
-    var vid_w_orig;  // original video dimensions
-    var vid_h_orig;
-
-    jQuery(function() { // runs after DOM has loaded
-
-        vid_w_orig = parseInt(jQuery('video').attr('width'));
-        vid_h_orig = parseInt(jQuery('video').attr('height'));
-        $('#debug').append("<p>DOM loaded</p>");
-
-        jQuery(window).resize(function () { resizeToCover(); });
-        jQuery(window).trigger('resize');
-    });
-
-    function resizeToCover() {
-        // set the video viewport to the window size
-        jQuery('#video-viewport').width(jQuery(window).width());
-        jQuery('#video-viewport').height(jQuery(window).height());
-
-        // use largest scale factor of horizontal/vertical
-        var scale_h = jQuery(window).width() / vid_w_orig;
-        var scale_v = jQuery(window).height() / vid_h_orig;
-        var scale = scale_h > scale_v ? scale_h : scale_v;
-
-        // don't allow scaled width < minimum video width
-        if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
-
-        // now scale the video
-        jQuery('video').width(scale * vid_w_orig);
-        jQuery('video').height(scale * vid_h_orig);
-        // and center it by scrolling the video viewport
-        jQuery('#video-viewport').scrollLeft((jQuery('video').width() - jQuery(window).width()) / 2);
-        jQuery('#video-viewport').scrollTop((jQuery('video').height() - jQuery(window).height()) / 2);
-     };
-  </script>
-</body>
+  </body>
 </html>
