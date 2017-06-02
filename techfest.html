@@ -141,6 +141,18 @@
         opacity: .25;
       }
 
+      .navbar-toggle {
+        margin-top: 17px;
+      }
+
+    @media only screen and (min-width: 992px) {
+
+      .invite {
+        height: 200px;
+      }
+
+    }
+
 
       /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
@@ -188,7 +200,7 @@
       }
 
       .invite p{
-        font-size: px !important;
+        font-size: 15px !important;
         text-align: center;
       }
 
@@ -212,7 +224,7 @@
       }
 
       .invite p{
-        font-size: 17px !important;
+        font-size: 15px !important;
         text-align: center;
       }
 
@@ -293,7 +305,7 @@
     </div>
 
     <!-- Full Width Green Section with Invite -->
-    <div class="invite" style="background-color:#73bf4a; padding: 15px; height: 200px;">
+    <div class="invite" style="background-color:#73bf4a; padding: 15px;">
       <div class="container">
         <div class="col-md-7">
           <p style="font-size: 22px;">Over 350 people came together last year. Don’t miss this one! Join us for this one-of-a-kind casual gala that celebrates the area’s tech and entrepreneurial community, supports downtown development, and recognizes Missouri’s best entrepreneurs.</p>
@@ -323,12 +335,12 @@
         <div class="event event-1">
           <div class="heading">Reception and Demo Day</div>
           <div class="event-time">6:00 p.m.</div>
-          <div class="event-description">Welcome to the champagne reception. Meet aspiring tech entrepreneurs representing over 20 countries as they prepare to compete for $100,000 in cash and services and the chance to build their businesses with the support of the community in Cape Girardeau.</div>
+          <div class="event-description">Welcome to the champagne reception. Meet aspiring tech entrepreneurs representing over 20 countries as they prepare to compete for $100,000 in cash and services and the chance to build their businesses with the support of the community in Cape Girardeau. Meet youth and adults demonstrating their technology solutions from a hackathon for Big Brothers Big Sisters and a code studio earlier in the week.</div>
         </div>
         <div class="event event-2 disabled">
           <div class="heading">Ascent - Sneak Peak</div>
           <div class="event-time" style="color:#73bf49">7:00 p.m.</div>
-          <div class="event-description">On the way to the rooftop, get a sneak peek at the new home of the expanded Codefi coworking tech business center, the coolest tech-powered office environment around. Meet youth and adults demonstrating their technology solutions from a hackathon for Big Brothers Big Sisters and a code studio earlier in the week, and indulge in the fun and interactive experience.</div>
+          <div class="event-description">On the way to the rooftop, get a sneak peek at the new home of the expanded Codefi coworking tech business center, the coolest tech-powered office environment around.</div>
         </div>
         <div class="event event-3 disabled">
           <div class="heading">Program</div>
@@ -375,13 +387,13 @@
     }
     </style>
 
-    <div class="carousel-wrapper" style="margin-top: 20px">
+    <div class="carousel-wrapper col-xs-9 col-xs-offset-3 col-sm-12" style="margin-top: 20px">
 
       <div class="text-center" style="margin-bottom: 50px;">
         <a href="https://www.eventbrite.com/e/marquette-techfest-2017-tickets-34988692120" class="allUpper ghost-button">PURCHASE TICKETS</a>
       </div>
 
-      <div class="heading text-center" style="margin: 20px auto; width: 50%; font-size: 28px; color: #9d9d9d; line-height: 25px">Photos of the 2016 Marquette Techfest</div>
+      <div class="heading text-center" style="margin: 20px auto; width: 50%; font-size: 24px; color: #9d9d9d; line-height: 25px">Photos of the 2016 Marquette Techfest</div>
 
       <div id="footer-carousel" class="carousel slide" data-ride="carousel" style="margin: 20px auto; width: 50%">
         <ol class="carousel-indicators">
@@ -433,8 +445,6 @@
             <img src="img/techfest/techfest-slide9.jpg" alt="guests at the rooftop enjoy the late night party and the scenic view of cape girardeau"/>
           </div>
 
-          <div id="button-anchor"/>
-        </div>
       </div>
 
     </div>
@@ -566,6 +576,7 @@
           $('.event-4').addClass('disabled');
           $('.event-5').removeClass('disabled');
         }
+
         else {
           $('#event-5-image-sm').css('visibility', 'visible');
         }
