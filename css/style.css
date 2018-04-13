@@ -215,6 +215,10 @@ ul.linklist {
   min-width: 315px;
 }
 
+.sidebar a {
+  color: #666;
+}
+
 .first {
   margin-top: 50px;
 }
