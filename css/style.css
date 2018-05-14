@@ -860,6 +860,21 @@ GIVE STARTUP LOGOS ON IMPACT PAGE BOTTOM-MARGIN ON MOBILE
   margin-bottom: 15px;
 }
 
+/*-------------------------------------------------------
+FOOTER
+-------------------------------------------------------*/
+
+.footer {
+  border-top: 1px solid #EEE;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.footer p {
+  margin-bottom: 15px;
+  line-height: 20px;
+}
+
 
 /*--------------------------------------------------------------------------------------------------
 FROM MONTREAL TO MEMPHIS (PARLEZ VOUS FRANCAIS?), TELL ALL THE GIRLS THE MEDIA QUERIES' ON THEIR WAY
